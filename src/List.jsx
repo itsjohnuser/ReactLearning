@@ -1,4 +1,4 @@
-
+import propTypes from 'prop-types';
 function List (props){
   
   //fruits.sort((a,b)=>a.name.localeCompare(b.name));// Alphabetical order
@@ -28,11 +28,11 @@ function List (props){
 }
 
 List.propTypes = {
-  category: PropTypes.string,
-  items: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    calories: PropTypes.number.isRequired
+  category: propTypes.string,
+  items: propTypes.arrayOf(propTypes.shape({
+    id: propTypes.number.isRequired,
+    name: propTypes.string.isRequired,
+    calories: propTypes.number.isRequired
   })),
 }
 
