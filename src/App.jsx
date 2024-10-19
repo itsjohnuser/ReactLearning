@@ -4,8 +4,21 @@ import Food from "./Food";
 import Card from "./Card";
 import Button from "./Button";
 import UserGreeting from "./UserGreeting";
+import List from "./List";
 
 function App() {
+  const fruits = [
+    {id:1, name:"apple", calories:95},
+     {id:2, name:"banana", calories:45}, 
+     {id:3, name:"pineapple", calories:104}, 
+     {id:4, name:"peach", calories:23}
+  ];
+  const vegetables = [
+    {id:5, name:"bringal", calories:45},
+     {id:6, name:"calery", calories:55}, 
+     {id:7, name:"carrot", calories:154}, 
+     {id:8, name:"corn", calories:223}
+  ];
   
   return(
     <>
@@ -25,6 +38,10 @@ function App() {
     <Button/>
     <UserGreeting isLoggedIn = {false} username="John code"/>
     <UserGreeting isLoggedIn = {true}/>
+    <List items = {fruits} category = "Fruits"/>
+    <List items = {vegetables} category = "Vegetables"/>
+
+    
 
     </>
     

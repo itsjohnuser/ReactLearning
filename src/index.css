@@ -54,4 +54,39 @@
 
 
 }
+.food-item{
+  background-color: antiquewhite;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.food-description{
+  font-size: 1.2em;
+  margin: 10px 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: black;
 
+}
+
+.list-category{
+  font-size: 1.5em;
+  margin: 10px 0;
+  padding: 0;
+  border: none;
+  background-color: beige;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
+.list-item{
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+
+}
+.food-items{
+  background-color: rgb(129, 178, 178);
+}
