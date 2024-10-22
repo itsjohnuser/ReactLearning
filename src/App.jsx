@@ -6,6 +6,7 @@ import Button from "./Button";
 import UserGreeting from "./UserGreeting";
 import List from "./List";
 import ButtonClick from "./ButtonClick";
+import ProfilePic from "./ProfilePic";
 function App() {
   const fruits = [
     {id:1, name:"apple", calories:95},
@@ -43,7 +44,7 @@ function App() {
 
       <ButtonClick/>
     
-
+      <ProfilePic/>
     </>
     
   );
