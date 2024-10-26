@@ -111,3 +111,26 @@
 .counter-button:hover{
   background-color: darkgray;
 }
+.color-picker-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+h1{
+  font-size: 2em;
+  
+}
+.color-display{
+  display:flex;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.1s ease-in-out;
+
+}
