@@ -11,12 +11,17 @@ function Component(){
 
   const [food,setFood] = useState(["apple", "orange", "Banana"]);
 
+
+
+  
   function handleAddFood(){
     const newFood = document.getElementById("foodInput").value;
     setFood([...food,newFood]);
     document.getElementById("foodInput").value = "";
 
   }
+
+
   function handleRemoveFood(index){
     setFood(food.filter((_, i)=> i !==index));
   }
@@ -54,6 +59,8 @@ function Component(){
           <input type="text" id="foodInput" placeholder="Enter food name" />
           <button onClick={handleAddFood}>Add Food</button>
         </ul>
+
+      
       
 
     </div>
