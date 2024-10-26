@@ -56,6 +56,7 @@
 import MyComponent from './MyComponent';
 import Counter from './Counter';
 import ColorPicker from './ColorPicker';
+import Component from './Component';
 function App() {
   return (
     <>
@@ -64,6 +65,7 @@ function App() {
       <Counter />
     
       <ColorPicker />
+      <Component />
       
     </>
   );
