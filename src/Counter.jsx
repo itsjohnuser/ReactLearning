@@ -5,11 +5,15 @@ function Counter(){
   const [Count,setCount] = useState(0);
 
 const increment = ()=>{ 
-  setCount(Count + 1);
+  setCount(C=>C + 1);
+  setCount(C=>C + 1);
+  setCount(C=>C + 1);
 }
 
 const decrement = ()=>{
-  setCount(Count - 1);
+  setCount(C=>C - 1); //updater function arrow function
+  setCount(C=>C - 1);
+  setCount(C=>C - 1);
 }
 const reset = ()=>{
   setCount(0);
