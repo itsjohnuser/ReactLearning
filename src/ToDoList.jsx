@@ -1,9 +1,27 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
+
+
 
 function ToDoList(){
   const [tasks,setTasks] = useState(["Eat Breakfast", "Take a shower", "walk the dog"]);
   const [newTask,setNewTask] = useState([]);
+  const[count,setCount] = useState(0);
+  const [color,setColor] = useState("green");
+  
+  useEffect(()=>{
+    document.title= `count: ${count} ${color}`
+  },[count,color]);
 
+  function addCount(){
+    setCount(c=>c+1);
+  }
+  function subtract(){
+    setCount(c=>c-1);
+  }
+
+  function colorChange(){
+    setColor(c=>c === "green" ? "red" : "green");
+  }
   const handleInputChange = (e)=>{
     setNewTask(e.target.value);
     
@@ -47,6 +65,10 @@ function ToDoList(){
   }
 
   return(<>
+  <p style={{color:color}}>count:{count}</p>
+  <button onClick={addCount}>Add</button>
+  <button onClick={subtract}>Subtract</button>
+  <button onClick={colorChange}>COlor change</button>
   <div className="to-do-list">
     <h1>To-Do-List</h1>
     <div>
