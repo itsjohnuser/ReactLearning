@@ -58,6 +58,7 @@ import Counter from './Counter';
 import ColorPicker from './ColorPicker';
 import Component from './Component';
 import Component3 from './Component3';
+import ToDoList from './ToDoList';
 function App() {
   return (
     <>
@@ -68,6 +69,7 @@ function App() {
       <ColorPicker />
       <Component />
       <Component3/>
+      <ToDoList />
       
     </>
   );

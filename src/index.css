@@ -134,3 +134,74 @@ h1{
   transition: background-color 0.1s ease-in-out;
 
 }
+
+.to-do-list{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+h1{
+  font-size: 4rem;
+}
+button{
+  background-color: hsl(200,100%,50%);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+.add-button{
+  background-color: green;
+}
+.Delete-button{
+  background-color: red;
+}
+.Delete-button:hover{
+  background-color: darkred;
+}
+.Move-button{
+  background-color: rgb(100, 100, 210);
+}
+.Down-button{
+  background-color:rgb(100, 100, 210);
+}
+input[type="text"]{
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  color: gray;
+}
+ol{
+  
+justify-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  
+  margin-bottom: 20px;
+
+}
+li{
+  list-style-type: none;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  
+
+
+}
+text{
+  flex: 1;
+  
+}
+.Delete-button, .Move-button,.Down-button{
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+  
+}
