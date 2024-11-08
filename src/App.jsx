@@ -59,6 +59,7 @@ import ColorPicker from './ColorPicker';
 import Component from './Component';
 import Component3 from './Component3';
 import ToDoList from './ToDoList';
+import DigitalClock from './DigitalClock';
 function App() {
   return (
     <>
@@ -70,7 +71,7 @@ function App() {
       <Component />
       <Component3/>
       <ToDoList />
-      
+      <DigitalClock/>
     </>
   );
 }

@@ -206,3 +206,13 @@ text{
   transition: background-color 0.5 ease;
 
 }
+
+.clock-container{
+
+}
+.clock{
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+}
