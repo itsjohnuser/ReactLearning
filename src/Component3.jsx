@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 
 
 function Component3(){
@@ -6,8 +7,31 @@ const [Cars, setCars] = useState([]);
 const [CarYear, setCarYear] = useState(new Date().getFullYear());
 const [CarMake, setCarMake] = useState("");
 const [CarModel, setCarModel] = useState("");
+const [width,setWidth] = useState(window.innerWidth)
+const [height,setHeight] = useState(window.innerHeight)
 
 
+useEffect(()=>{
+  window.addEventListener("resize",handleResize);
+  console.log("Event Listner added")
+
+  return()=>{
+    window.removeEventListener("resize",handleResize)
+    console.log("Event Listner Removed")
+  }
+
+},[]);
+
+
+useEffect(()=>{
+  document.title = `size : ${width} x ${height} `;
+},[width,height])
+
+
+function handleResize(){
+  setWidth(window.innerWidth)
+  setHeight(window.innerHeight)
+}
 
 function handleAddCar() {
   const newCar = {
@@ -42,6 +66,10 @@ function handleModelChange(e) {
 
 return (
   <div>
+    <p>window width:{width}px</p>
+    <p>window height:{height}px</p>
+
+
     <h2>List of Cars</h2>
 
 
