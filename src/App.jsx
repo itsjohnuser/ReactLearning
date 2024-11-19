@@ -60,6 +60,7 @@ import Component from './Component';
 import Component3 from './Component3';
 import ToDoList from './ToDoList';
 import DigitalClock from './DigitalClock';
+import ComponentA from './ComponentA';
 function App() {
   return (
     <>
@@ -72,6 +73,7 @@ function App() {
       <Component3/>
       <ToDoList />
       <DigitalClock/>
+      <ComponentA/>
     </>
   );
 }
