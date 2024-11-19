@@ -53,19 +53,21 @@
 // export default App
 
 
-import MyComponent from './MyComponent';
-import Counter from './Counter';
-import ColorPicker from './ColorPicker';
-import Component from './Component';
-import Component3 from './Component3';
-import ToDoList from './ToDoList';
-import DigitalClock from './DigitalClock';
-import ComponentA from './ComponentA';
+// import MyComponent from './MyComponent';
+// import Counter from './Counter';
+// import ColorPicker from './ColorPicker';
+// import Component from './Component';
+// import Component3 from './Component3';
+// import ToDoList from './ToDoList';
+// import DigitalClock from './DigitalClock';
+// import ComponentA from './ComponentA';
+    import NewButton from "./NewButton";
 function App() {
   return (
     <>
+      
     
-      <MyComponent />
+      {/* <MyComponent />
       <Counter />
     
       <ColorPicker />
@@ -73,7 +75,10 @@ function App() {
       <Component3/>
       <ToDoList />
       <DigitalClock/>
-      <ComponentA/>
+      <ComponentA/> */}
+      <NewButton/>
+      
+      
     </>
   );
 }
